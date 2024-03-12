@@ -1,5 +1,6 @@
 import log from "loglevel";
+import { config } from "../config/index.js";
 
-log.setLevel(process.env.LOG_LEVEL);
+log.setLevel(config.logLevel);
 
 export { log };
